@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+
+  .home__container {
+    flex: 6;
+
+    .widgets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 1rem;
+      gap: 1rem;
+    }
+    .charts {
+      display: flex;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+    .list {
+      padding: 1rem;
+    }
+  }
+}

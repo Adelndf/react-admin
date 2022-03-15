@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+
+  .list__container {
+    flex: 6;
+
+    .dataTable__Wtapper {
+      padding: 1rem;
+    }
+  }
+}

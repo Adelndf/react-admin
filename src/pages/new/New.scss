@@ -1,0 +1,98 @@
+.new {
+  display: flex;
+
+  .new__container {
+    flex: 6;
+
+    .new__Wrapper {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .top,
+      .bot {
+        display: flex;
+        background-color: var(--the30-clr);
+        padding: 0.7rem;
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        opacity: 0.9;
+        transition: var(--transition-150);
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .top {
+        .title {
+          color: var(--text-gray-clr);
+          font-size: 1.5rem;
+        }
+      }
+      .bot {
+        .left {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 9.375rem;
+            height: 9.375rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border: var(--border);
+          }
+        }
+        .right {
+          flex: 2;
+
+          form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            button {
+              width: 150px;
+              color: var(--the30-clr);
+              background-color: var(--the10-clr);
+              border-radius: 0.5rem;
+              padding: 0.5rem 0;
+              border: none;
+              cursor: pointer;
+              transition: var(--transition-150);
+              text-transform: capitalize;
+
+              &:active {
+                transform: scale(0.95);
+              }
+            }
+
+            .formInput {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              max-height: 62px;
+
+              input {
+                width: 100%;
+                padding: 5px;
+                border: none;
+                outline: none;
+                border-bottom: var(--border);
+                position: relative;
+                z-index: 1;
+              }
+
+              label {
+                text-transform: capitalize;
+                font-weight: var(--text-bold);
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

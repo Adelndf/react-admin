@@ -1,0 +1,59 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--the30-clr);
+  padding: 0.7rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  height: 100px;
+  max-height: 100px;
+  opacity: 0.9;
+  transition: var(--transition-150);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left {
+    .title {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--text-gray-clr);
+    }
+    .counter {
+      font-size: 1.2rem;
+      font-weight: var(--text-bold);
+    }
+    .link {
+      cursor: pointer;
+      font-size: 0.8rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .right {
+    align-items: flex-end;
+
+    .perc {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: var(--text-bold);
+    }
+
+    .icon {
+      padding: 5px;
+      font-size: 1.8rem;
+      border-radius: 5px;
+    }
+  }
+}

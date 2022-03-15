@@ -1,0 +1,111 @@
+.dataTable {
+  background-color: var(--the30-clr);
+  padding: 0.7rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  transition: var(--transition-150);
+  opacity: 0.9;
+
+  height: 450px;
+  width: 100%;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+
+    h1 {
+      color: var(--text-gray-clr);
+      text-transform: capitalize;
+      font-weight: var(--text-bold);
+      font-size: 2rem;
+    }
+    .btn {
+      padding: 5px;
+      border-radius: 5px;
+      color: #6439ff;
+      background-color: rgba(100, 57, 255, 0.15);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: var(--text-bold);
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(100, 57, 255, 0.2);
+      }
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+    &.active {
+      color: green;
+      background-color: rgba(0, 128, 0, 0.2);
+    }
+    &.pending {
+      color: goldenrod;
+      background-color: rgba(218, 165, 32, 0.2);
+    }
+    &.passive {
+      color: crimson;
+      background-color: rgba(220, 20, 60, 0.2);
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    .viewBtn {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 139, 0.5);
+      transition: var(--transition-150);
+
+      &:hover {
+        background-color: rgba(0, 0, 139, 0.1);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    .deleteBtn {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      cursor: pointer;
+      border: 1px solid rgba(220, 20, 60, 0.5);
+      transition: var(--transition-150);
+
+      &:hover {
+        background-color: rgba(220, 20, 60, 0.1);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

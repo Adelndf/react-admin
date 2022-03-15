@@ -1,0 +1,17 @@
+.chart {
+  background-color: var(--the30-clr);
+  padding: 0.7rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  transition: var(--transition-150);
+  flex: 2;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .chartGrid {
+    stroke: rgb(225, 225, 225);
+  }
+}

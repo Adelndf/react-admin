@@ -1,0 +1,119 @@
+.single {
+  display: flex;
+
+  .single__container {
+    flex: 6;
+
+    .single__wrapper {
+      padding: 1rem;
+
+      .top {
+        display: flex;
+        gap: 1rem;
+
+        .left {
+          flex: 1;
+          position: relative;
+          background-color: var(--the30-clr);
+          padding: 0.7rem;
+          box-shadow: var(--box-shadow);
+          border-radius: 0.5rem;
+          transition: var(--transition-150);
+          opacity: 0.9;
+
+          width: 100%;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          .editBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-transform: capitalize;
+            padding: 7px;
+            border-radius: 0 7px 0 0;
+            font-size: 0.8rem;
+            cursor: pointer;
+            color: #6439ff;
+            background-color: rgba(100, 57, 255, 0.15);
+
+            &:hover {
+              background-color: rgba(100, 57, 255, 0.2);
+            }
+          }
+
+          .item {
+            display: flex;
+            gap: 1.5rem;
+
+            .itemImg {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+            .details {
+              .userTitle {
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                margin-bottom: 1rem;
+              }
+              .detailsItem {
+                margin-bottom: 0.5rem;
+
+                .infoKey {
+                  text-transform: capitalize;
+                  font-weight: var(--text-bold);
+                  font-weight: var(--text-bold);
+                  color: var(--text-gray-clr);
+                  display: block;
+                  font-size: 0.8rem;
+                }
+                .infoValue {
+                  font-weight: 600;
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+        .right {
+          flex: 2;
+          background-color: var(--the30-clr);
+          padding: 0.7rem;
+          box-shadow: var(--box-shadow);
+          border-radius: 0.5rem;
+          transition: var(--transition-150);
+          opacity: 0.9;
+
+          width: 100%;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .bot {
+        background-color: var(--the30-clr);
+        padding: 0.7rem;
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        transition: var(--transition-150);
+        margin-top: 1rem;
+
+        width: 100%;
+      }
+    }
+  }
+
+  .title {
+    color: var(--text-gray-clr);
+    text-transform: capitalize;
+    font-weight: var(--text-bold);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,48 @@
+.table {
+  background-color: var(--the30-clr);
+  padding: 0.7rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  transition: var(--transition-150);
+  flex: 1;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: var(--text-bold);
+    color: var(--text-gray-clr);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  .tableCell {
+    .cellWrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        object-fit: contain;
+      }
+    }
+    .status {
+      padding: 5px;
+      border-radius: 5px;
+      &.Approved {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.2);
+      }
+      &.Pending {
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.2);
+      }
+    }
+  }
+}
